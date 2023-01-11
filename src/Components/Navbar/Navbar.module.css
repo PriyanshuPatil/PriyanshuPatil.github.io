@@ -1,0 +1,94 @@
+
+.NavParentD {
+    margin:auto;
+    margin: 30px auto;
+    width:80%;
+    display:flex;
+    padding:10px;
+    justify-content: space-evenly;
+    
+}
+
+    
+.NavHeadingD {
+  font-weight:700;
+   font-size:25px;
+   width: 50%;
+}
+ @media (max-width: 767px) {
+    .NavMenuD {
+         display: none;
+   }
+ }
+.NavMenuD {
+    display:flex;
+    justify-content: space-evenly;
+    gap:20px;
+    width: 60%;
+    margin: auto;
+}
+.NavLinkD {
+    opacity: .9;
+    color: gray;
+}
+
+
+.NavLinkD {
+    background-image: linear-gradient(
+      to right,
+      #7e6df6,
+      #54b3d6 0%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .NavLinkD:before {
+    content: '';
+    background: #3018df; 
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .NavLinkD:hover {
+   background-position: 0;
+  }
+  
+  .NavLinkD:hover::before {
+    width:100%;
+  }
+  .NavLinkM{
+  z-index: 10; 
+  padding-right: 1rem; 
+  color: #6B7280; 
+  cursor: pointer; 
+}  
+  
+.NavMenuM {
+  display: flex; 
+position: absolute; 
+top: 0; 
+left: 0; 
+/* background-image: background-image: linear-gradient(to bottom, var(--tw-gradient-stops));  */
+background-color: #000000; 
+background-color: #1F2937; 
+color: #6B7280; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center; 
+width: 100%; 
+height: fit-content;
+
+}
