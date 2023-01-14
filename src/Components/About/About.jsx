@@ -1,13 +1,15 @@
-import { Button, Tooltip } from "@chakra-ui/react";
 import React from "react";
 import { useSelector } from "react-redux";
 import TypeWriterEffect from "react-typewriter-effect";
 import ProfilePhoto from "../../Assets/png/profilePic.jpg";
+import { Button, Tooltip } from "@chakra-ui/react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 const About = () => {
   const themeColor = useSelector((store) => store.Theme.theme);
   return (
+    <div name="About" style={{paddingTop:"100px"}}>
+  
     <div
       style={{
         boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
@@ -16,9 +18,9 @@ const About = () => {
         borderRadius: "20px",
       }}
     >
-      <div
+     <div
         style={{
-          backgroundColor: themeColor,
+        backgroundColor: themeColor,
           color: "white",
           padding: "40px",
           display: "grid",
@@ -100,7 +102,7 @@ const About = () => {
                       padding: "10px",
                     }}
                   >
-                    {el.plateform}
+                  <a href={el.link}> {el.plateform}</a> 
                   </div>
                 </Tooltip>
               );
@@ -129,7 +131,8 @@ const About = () => {
           Stack and Data Structure and Algorithms.
           <Button
             style={{
-              backgroundColor: "white",
+              backgroundColor: themeColor,
+              color:"white",
               boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
               display: "block",
               margin: "20px 0px",
@@ -166,12 +169,13 @@ const About = () => {
         </div>
       </div>
     </div>
+    </div>
   );
 };
 
 export default About;
 
-const SocialIcon = [
+ const SocialIcon = [
   {
     plateform: <FaLinkedinIn />,
     label: "LinkedIn",

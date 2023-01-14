@@ -1,9 +1,9 @@
 .NavParentD {
   margin: auto;
-  margin: 20px auto;
+  margin: 0px auto;
   width: 80%;
   display: flex;
-  padding: 10px;
+  padding: 20px 40px 10px 40px;
   position: sticky;
   justify-content: space-evenly;
 }

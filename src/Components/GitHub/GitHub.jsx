@@ -5,14 +5,15 @@ import GitHubCalendar from 'react-github-calendar'
 const Projects = () => {
     const themeColor = useSelector((store) => store.Theme.theme);
   return (
+    <div name="GitHub" style={{paddingTop:"100px"}}>
+  
      <div 
-     name="GitHub"
+  
     style={{
       boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       margin: "auto",
       width: "80%",
       borderRadius: "20px",
-      margin:"50px auto"
       
     }}
   >
@@ -44,7 +45,7 @@ const Projects = () => {
         </div>
         </div>
  
-      
+    </div>
 
 
   )

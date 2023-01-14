@@ -12,9 +12,9 @@ const Navbar = () => {
   // }
 
   return (
-    <div style={{position:"relative"}}>
-      <div className={style.NavParentD}>
-        <div className={style.NavHeadingD}>
+    <div >
+      <div className={style.NavParentD}  style={{position: "fixed", top: "0", left: "10%", zIndex: "9999",backgroundColor:"white"}}>
+        <div className={style.NavHeadingD} >
           Pri<span style={{ color: themeColor }}>yanshu</span>
         </div>
         <div className={style.NavMenuD}>
