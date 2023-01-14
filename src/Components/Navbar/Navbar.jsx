@@ -12,7 +12,7 @@ const Navbar = () => {
   // }
 
   return (
-    <div>
+    <div style={{position:"relative"}}>
       <div className={style.NavParentD}>
         <div className={style.NavHeadingD}>
           Pri<span style={{ color: themeColor }}>yanshu</span>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   setSidebar(!sidebar);
                 }}
                 smooth
-                duration={500}
+                duration={200}
                 className={style.NavLinkD}
               >
                 {" "}

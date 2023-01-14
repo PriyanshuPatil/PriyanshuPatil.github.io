@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { SkillsData } from '../../Data/SkillsData';
 import GitHubCalendar from 'react-github-calendar'
-const GitHub = () => {
+const Projects = () => {
     const themeColor = useSelector((store) => store.Theme.theme);
   return (
      <div 
@@ -31,14 +31,14 @@ const GitHub = () => {
    GitHub Calendar
     </h2>
  </div>
-        <div  style={{width:"full",display:"grid",gridTemplateColumns:"repeat(1,1fr)",gap:"15px",textAlign:"center",padding:"8px 12px"}} >
+        <div  style={{width:"full",display:"grid",gridTemplateColumns:"repeat(1,1fr)",gap:"15px",textAlign:"center",padding:"40px"}} >
              <GitHubCalendar
             username="PriyanshuPatil"
             blockSize={20}
             blockMargin={5}
             fontSize={18}
           />
-      
+       <img style={{margin:"auto",padding:"20px"}} align={'center'} src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuPatil&" alt="PriyanshuPatil"></img>
        
 
         </div>
@@ -50,4 +50,4 @@ const GitHub = () => {
   )
 }
 
-export default GitHub 
+export default Projects 

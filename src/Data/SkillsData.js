@@ -7,6 +7,8 @@ import Typescript from "../Assets/languages/typescript.png";
 import Nextjs from "../Assets/languages/nextjs.png";
 import GitHub from "../Assets/languages/github.png";
 import Cypress from "../Assets/languages/cypress.png";
+import MongoDB from "../Assets/languages/mongodb.png";
+import Vscode from "../Assets/languages/vscode.png";
 export const SkillsData = [
     {
       id: 1,
@@ -59,6 +61,18 @@ export const SkillsData = [
     },
     {
       id: 9,
+      src: MongoDB,
+      title: " mongoDB",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 10,
+      src: Vscode,
+      title: "vs code",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 11,
       src:Cypress,
       title: "Cypress",
       style: "shadow-black",
