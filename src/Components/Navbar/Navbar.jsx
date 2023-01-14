@@ -1,8 +1,9 @@
 import style from "./Navbar.module.css";
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes,FaPaintBrush } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
+import Modalis from "./Modal";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -26,6 +27,7 @@ const Navbar = () => {
               </Link>
             </div>
           ))}
+          <Modalis/>
         </div>
         <div className={style.NavMenuM}>
           <div

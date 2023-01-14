@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import { Button, Tooltip } from "@chakra-ui/react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub, FiTwitter } from "react-icons/fi";
+import {BsFillHeartFill } from 'react-icons/bs';
+
 const Footer = () => {
   const themeColor = useSelector((store) => store.Theme.theme);
   return (
@@ -47,7 +49,9 @@ const Footer = () => {
             </Tooltip>
           );
         })}
+      
       </div>
+        <div style={{display:"flex",textAlign:"center",alignItems:"center",color:"white",fontSize:"22px",fontWeight:"500",marginTop:"40px",marginLeft:"41%"}}>Made By <BsFillHeartFill style={{color:"blue",margin:"5px"}}/> Priyanshu Patil</div>
     </div>
     </div>
   );

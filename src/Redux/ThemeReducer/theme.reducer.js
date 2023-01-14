@@ -1,16 +1,13 @@
-import { THEME_DARK, THEME_LIGHT } from "./theme.actionType";
+import { Change_Theme, THEME_DARK, THEME_LIGHT } from "./theme.actionType";
 
 const initialState={
     theme:"green"
 }
 
-export const ThemeReducer=(state=initialState,{type})=>{
+export const ThemeReducer=(state=initialState,{type,payload})=>{
 switch(type){
-    case THEME_DARK :{
-        return {...state,theme:"dark"}
-    }
-    case THEME_LIGHT :{
-        return {...state,theme:"light"}
+    case Change_Theme :{
+        return {...state,theme:payload}
     }
     default:{
         return state ;
