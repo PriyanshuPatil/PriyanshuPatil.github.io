@@ -1,11 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.24114d6b.css",
-    "main.js": "/static/js/main.ccdda4dc.js",
+    "main.css": "/static/css/main.0817e1b8.css",
+    "main.js": "/static/js/main.e2dc4363.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/Clotheyard.png": "/static/media/Clotheyard.e305992c6ffb84632af4.png",
     "static/media/KindMeal.png": "/static/media/KindMeal.09056393b328469ee285.png",
+    "static/media/Wrike.png": "/static/media/Wrike.ee673b50385b02244328.png",
     "static/media/ZoomCar.png": "/static/media/ZoomCar.fab6aaae8cbda51a3f3a.png",
     "static/media/CampaignMonitor.png": "/static/media/CampaignMonitor.11c59168ff290d2cf5e0.png",
+    "static/media/fw20_1043-Priyanshu-Patil-Resume.pdf": "/static/media/fw20_1043-Priyanshu-Patil-Resume.d614ab1eb7e6d5891dc3.pdf",
+    "static/media/About.png": "/static/media/About.1596c8c2e1233f9e7173.png",
     "static/media/cypress.png": "/static/media/cypress.56c06c34dbc0821db7c8.png",
     "static/media/nextjs.png": "/static/media/nextjs.e0cc548b52ed71c83731.png",
     "static/media/profilePic.jpg": "/static/media/profilePic.22f0dd58b8fa8956771e.jpg",
@@ -15,12 +19,12 @@
     "static/media/mongodb.png": "/static/media/mongodb.7233e939bf00e9a1fde4.png",
     "static/media/react.png": "/static/media/react.fbf4a0d447ec75d4500b.png",
     "index.html": "/index.html",
-    "main.24114d6b.css.map": "/static/css/main.24114d6b.css.map",
-    "main.ccdda4dc.js.map": "/static/js/main.ccdda4dc.js.map",
+    "main.0817e1b8.css.map": "/static/css/main.0817e1b8.css.map",
+    "main.e2dc4363.js.map": "/static/js/main.e2dc4363.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24114d6b.css",
-    "static/js/main.ccdda4dc.js"
+    "static/css/main.0817e1b8.css",
+    "static/js/main.e2dc4363.js"
   ]
 }
