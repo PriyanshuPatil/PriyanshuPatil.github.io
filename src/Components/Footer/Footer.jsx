@@ -44,7 +44,7 @@ const Footer = () => {
                   display: "block",
                 }}
               >
-                <a href={el.link}> {el.plateform}</a>
+                <a href={el.link} target={"_blank"}> {el.plateform}</a>
               </div>
             </Tooltip>
           );

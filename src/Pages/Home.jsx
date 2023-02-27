@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../Components/About/About'
+import Profile from '../Components/Profile/Profile'
 import Contact from '../Components/Contact/Contact'
 import Footer from '../Components/Footer/Footer'
 import GitHub from '../Components/GitHub/GitHub'
@@ -12,6 +13,7 @@ const Home = () => {
     <div name="Home" >
    <div>
 <Navbar />
+<Profile/>
 <About/>
 <Skills/>
 <GitHub/>

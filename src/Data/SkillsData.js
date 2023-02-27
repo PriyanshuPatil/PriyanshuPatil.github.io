@@ -53,26 +53,29 @@ export const SkillsData = [
       title: "TypeScript",
       style: "shadow-sky-400",
     },
-     {
+    {
       id: 8,
+      src: MongoDB,
+      title: " mongoDB",
+      style: "shadow-gray-400",
+    }
+   
+  ];
+  export const ToolsData = [
+     {
+      id: 1,
       src: GitHub,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 9,
-      src: MongoDB,
-      title: " mongoDB",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 10,
+      id: 2,
       src: Vscode,
       title: "vs code",
       style: "shadow-gray-400",
     },
     {
-      id: 11,
+      id: 3,
       src:Cypress,
       title: "Cypress",
       style: "shadow-black",

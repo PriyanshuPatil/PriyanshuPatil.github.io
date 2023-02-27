@@ -1,46 +1,55 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import { Tooltip } from '@chakra-ui/react';
+import React from 'react'
+import AboutPhoto from "../../Assets/png/About.png" ;
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FiGithub, FiTwitter } from 'react-icons/fi';
+import { useSelector } from 'react-redux';
 import TypeWriterEffect from "react-typewriter-effect";
-import ProfilePhoto from "../../Assets/png/profilePic.jpg";
-import { Button, Tooltip } from "@chakra-ui/react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FiGithub, FiTwitter } from "react-icons/fi";
 const About = () => {
-  const themeColor = useSelector((store) => store.Theme.theme);
+    const themeColor = useSelector((store) => store.Theme.theme);
   return (
     <div name="About" style={{paddingTop:"100px"}}>
-  
+ 
+<div
+    style={{
+      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+      margin: "auto",
+      width: "80%",
+      borderRadius: "20px",
+      
+    }}
+  >
     <div
       style={{
-        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-        margin: "auto",
-        width: "80%",
-        borderRadius: "20px",
+        backgroundColor: themeColor,
+        color: "white",
+        padding: "20px",
+        display: "grid",
+        justifyContent: "space-between",
+        gridTemplateColumns: "repeat(1,1fr)",
+        borderRadius: "20px 20px 0px 0px",
       }}
     >
-     <div
-        style={{
-        backgroundColor: themeColor,
-          color: "white",
-          padding: "40px",
-          display: "grid",
-          justifyContent: "space-between",
-          gridTemplateColumns: "repeat(2,1fr)",
-          borderRadius: "20px 20px 0px 0px",
-        }}
-      >
-        <div style={{ marginLeft: "0px" }}>
+   <h2 style={{ fontSize: "45px", fontWeight: "700", margin: "auto",textAlign:"center" }}>
+  About
+    </h2>
+ </div>
+ 
+        <div style={{ marginLeft: "0px",display:"grid",gridTemplateColumns:"repeat(2,1fr)",gap:"20px" }} >
+         <div>
           <img
             style={{
-              width: "55%",
+              width: "80%",
               height: "100%",
               border: "5px solid white",
               display: "box",
               marginLeft: "10%",
             }}
-            src={ProfilePhoto}
+            src={AboutPhoto}
           />
-        </div>
+          </div> 
+
+      
         <div
           style={{
             margin: "auto",
@@ -48,11 +57,22 @@ const About = () => {
             gap: "13px",
             alignItems: "center",
             textAlign: "center",
+            width:"70%",
+            margin:"30px" ,
+
           }}
         >
-          <h2 style={{ fontSize: "45px", fontWeight: "700", margin: "auto" }}>
-            Priyanshu Patil
-          </h2>
+         <div style={{ fontWeight: "700", fontSize: "25px"}}>
+            Priyanshu<span style={{ color: themeColor }}> Patil</span>
+          </div>
+          Adoptable and accountable team player, driven to deliver the best in any
+situation. A passionate Website Developer with proficiency in MERN
+Stack and Data Structure and Algorithms. Looking forward to utilizing my
+current skill set to start a career as a web developer. Hope to work in a
+challenging environment as a specialized MERN stack developer and
+play a key role in a company's growth.
+        
+        
           <div
             style={{
               display: "flex",
@@ -69,7 +89,8 @@ const About = () => {
                 fontSize: "20px",
               }}
               startDelay={10}
-              cursorColor="white"
+              cursorColor="white" 
+              
               multiText={[
                 "Full-Stack Developer",
                 "Web Designer",
@@ -77,6 +98,12 @@ const About = () => {
                 "Full-Stack Developer",
                 "Web Designer",
                 "UX Designer/Developer",
+                "Full-Stack Developer",
+                "Web Designer",
+                "UX Designer/Developer",
+                "Full-Stack Developer",
+                "Web Designer",
+                "UX Designer/Developer"
               ]}
               multiTextDelay={1000}
               typeSpeed={40}
@@ -88,6 +115,7 @@ const About = () => {
               gap: "10px",
               borderRadius: "20px",
               margin: "auto",
+              marginTop:"-60px"
             }}
           >
             {SocialIcon.map((el) => {
@@ -102,93 +130,41 @@ const About = () => {
                       padding: "10px",
                     }}
                   >
-                  <a href={el.link}> {el.plateform}</a> 
+                  <a href={el.link} target={"_blank"}> {el.plateform}</a> 
                   </div>
                 </Tooltip>
               );
             })}
           </div>
+        
+      </div>  
+       </div>
         </div>
+       
+ 
       </div>
-      <div
-        style={{
-          backgroundColor: "white",
-          color: "black",
-          margin: "auto",
-          width: "90%",
-          padding: "20px",
-          display: "grid",
-          justifyContent: "space-between",
-          gridTemplateColumns: "repeat(2,1fr)",
-        }}
-      >
-        <div style={{ display: "grid", gap: "10px" }}>
-          <div style={{ fontWeight: "700", fontSize: "25px" }}>
-            About <span style={{ color: themeColor }}>Me</span>
-          </div>
-          Adoptable and accountable team player, driven to deliver the best in
-          any situation. A passionate Website Developer with proficiency in MERN
-          Stack and Data Structure and Algorithms.
-          <Button
-            style={{
-              backgroundColor: themeColor,
-              color:"white",
-              boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-              display: "block",
-              margin: "20px 0px",
-              width: "150px",
-              fontWeight: "300",
-            }}
-          >
-            Resume
-          </Button>
-        </div>
-        <div
-          style={{
-            width: "50%",
-            height: "70%",
-            margin: "auto",
-            marginLeft: "20%",
-            paddingLeft: "50px",
-            display: "grid",
-            justifyContent: "space-between",
-            gridTemplateColumns: "1fr 2fr",
-            gap: "0px 20px",
-          }}
-        >
-          <div>Email</div>
-          <div>pantuugurjar@gmail.com</div>
-          <div>Phone</div>
-          <div>+91 9009474709</div>
-          <div>Birth</div>
-          <div>27-10-2001</div>
-          <div>Residence</div>
-          <div>India</div>
-          <div>Address</div>
-          <div>Indore, Madhya Pradesh</div>
-        </div>
-      </div>
-    </div>
-    </div>
-  );
-};
 
-export default About;
 
- const SocialIcon = [
+  )
+}
+
+export default About ;
+
+const SocialIcon = [
   {
-    plateform: <FaLinkedinIn />,
+    plateform: <FaLinkedinIn size={30} />,
     label: "LinkedIn",
     link: "https://www.linkedin.com/in/priyanshu-patil/",
   },
   {
-    plateform: <FiGithub />,
+    plateform: <FiGithub size={30}/>,
     label: "GitHub",
     link: "https://github.com/PriyanshuPatil",
   },
   {
-    plateform: <FiTwitter />,
+    plateform: <FiTwitter size={30}/>,
     label: "Twitter",
     link: "https://github.com/PriyanshuPatil",
   },
 ];
+

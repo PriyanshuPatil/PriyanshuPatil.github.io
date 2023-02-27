@@ -4,7 +4,8 @@ import { FaBars, FaTimes,FaPaintBrush } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 import Modalis from "./Modal";
-
+import Resume from "../../Assets/fw20_1043-Priyanshu-Patil-Resume.pdf"
+import { Box, Button } from "@chakra-ui/react";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const themeColor = useSelector((store) => store.Theme.theme);
@@ -27,7 +28,27 @@ const Navbar = () => {
               </Link>
             </div>
           ))}
-          <Modalis/>
+          <div className={style.NavMenuD}>
+          <Button
+            style={{
+              backgroundColor: themeColor,
+              color:"white",
+              boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+              display: "block",
+              margin: "0px 0px",
+              width: "100px",
+              fontWeight: "300",
+            }}   
+            
+          >
+            <a download={Resume}  target={"_blank"} href={Resume} >
+          <Box pt="-30px"  download  onClick={()=>{window.open('https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing','_blank' 
+);}} >Resume</Box>  </a>
+          </Button>
+        
+          </div>
+
+       
         </div>
         <div className={style.NavMenuM}>
           <div
@@ -60,6 +81,7 @@ const Navbar = () => {
               </Link>
             </div>
           ))}
+          
         </div>
       )}
     </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { SkillsData } from '../../Data/SkillsData';
 import GitHubCalendar from 'react-github-calendar'
+import { Heading } from '@chakra-ui/react';
+import { BsGithub } from 'react-icons/bs';
 const Projects = () => {
     const themeColor = useSelector((store) => store.Theme.theme);
   return (
@@ -32,16 +34,23 @@ const Projects = () => {
    GitHub Calendar
     </h2>
  </div>
+ 
         <div  style={{width:"full",display:"grid",gridTemplateColumns:"repeat(1,1fr)",gap:"15px",textAlign:"center",padding:"40px"}} >
              <GitHubCalendar
             username="PriyanshuPatil"
             blockSize={20}
             blockMargin={5}
             fontSize={18}
-          />
-       <img style={{margin:"auto",padding:"20px"}} align={'center'} src="https://github-readme-streak-stats.herokuapp.com/?user=PriyanshuPatil&" alt="PriyanshuPatil"></img>
-       
-
+          />  
+          <div style={{display:"flex",margin:"auto", fontWeight: "700", fontSize: "27px",textAlign:"center",marginTop:"30px"}}>
+          Username : <span style={{ color: themeColor ,display:"flex",gap:"10px",marginLeft:"5px"}}>  PriyanshuPatil <BsGithub size={30}/></span>
+          </div> 
+       <img style={{margin:"auto",padding:"10px"}} align={'center'} src="https://github-readme-stats.vercel.app/api?username=priyanshupatil&show_icons=true&locale=en&border_radius=2&theme=light" alt="PriyanshuPatil"></img>
+       <img style={{margin:"auto",padding:"10px"}} align={'center'} src="https://github-readme-streak-stats.herokuapp.com/?user=priyanshupatil&show_icons=true&locale=en&border_radius=2&theme=light" alt="PriyanshuPatil"></img>
+       {/* <img style={{margin:"auto",padding:"10px"}}
+          src="https://github-readme-streak-stats.herokuapp.com/?user=user=priyanshupatil&show_icons=true&locale=en&border_radius=2&theme=light"
+          alt="user=priyanshupatil"
+        /> */}
         </div>
         </div>
  

@@ -1,6 +1,8 @@
 import { color, Modal,ModalBody, ModalCloseButton, ModalContent, ModalHeader, useDisclosure } from '@chakra-ui/react';
 import React from 'react'
-import { FaBars, FaTimes,FaPaintBrush } from "react-icons/fa";
+import { FaBars, FaTimes,FaPaintBrush, } from "react-icons/fa";
+import { VscColorMode } from "react-icons/vsc";
+
 import { useDispatch, useSelector } from 'react-redux';
 import { change_theme } from '../../Redux/ThemeReducer/theme.action';
 const Modalis = () => {
@@ -9,7 +11,7 @@ const Modalis = () => {
         const { isOpen, onOpen, onClose } = useDisclosure()
         return (
           <>
-            <div onClick={onOpen}> <FaPaintBrush/></div>
+            <div onClick={onOpen} > <VscColorMode size={30}/></div>
       
             <Modal isOpen={isOpen} onClose={onClose} >
               <ModalContent style={{backgroundColor:themeColor,color:"white",padding:"20px",marginTop:"10%",border:"10px solid black"}}>
