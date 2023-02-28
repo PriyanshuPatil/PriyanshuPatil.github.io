@@ -164,7 +164,7 @@ const SocialIcon = [
   {
     plateform: <FiTwitter size={30}/>,
     label: "Twitter",
-    link: "https://github.com/PriyanshuPatil",
+    link: "https://twitter.com/priyanshu2710_",
   },
 ];
 

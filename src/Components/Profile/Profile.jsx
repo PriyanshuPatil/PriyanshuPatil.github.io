@@ -203,7 +203,7 @@ export default About;
   {
     plateform: <FiTwitter />,
     label: "Twitter",
-    link: "https://github.com/PriyanshuPatil",
+    link: "https://twitter.com/priyanshu2710_",
   },
 ];
 

@@ -88,7 +88,7 @@ const Projects = () => {
                     }}
                     onClick={() => { window.open(netlify, '_blank') }}
                   >
-                    <a href={netlify}> Demo </a><ImLink />
+                    <a href={netlify} target="_blank"> Demo </a><ImLink />
                   </Button>
                   <Button
                     style={{
