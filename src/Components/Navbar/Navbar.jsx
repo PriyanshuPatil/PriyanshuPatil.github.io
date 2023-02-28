@@ -41,7 +41,7 @@ const Navbar = () => {
             }}   
             
           >
-            <a download={Resume}  target={"_blank"} href={Resume} >
+            <a download  target={"_blank"} href={Resume} >
           <Box pt="-30px"  download  onClick={()=>{window.open('https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing','_blank' 
 );}} >Resume</Box>  </a>
           </Button>

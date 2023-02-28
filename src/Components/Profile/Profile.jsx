@@ -138,7 +138,7 @@ const About = () => {
           any situation. A passionate Website Developer with proficiency in MERN
           Stack and Data Structure and Algorithms.
           <div   onClick={()=>{window.open("https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing","_blank")}} >
-           <a download={Resume}  target={"_blank"} href={Resume} >
+           <a download target={"_blank"} href={Resume} >
             <Button
             style={{
               backgroundColor: themeColor,
