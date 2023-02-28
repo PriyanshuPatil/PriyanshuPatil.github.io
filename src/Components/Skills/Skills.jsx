@@ -46,7 +46,7 @@ const Skills = () => {
           {SkillsData.map(({ id, src, title, style }) => (
             <div
               key={id}
-              style={{textAlign:"center",boxShadow: `green 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; `}}
+              style={{textAlign:"center",boxShadow: `green 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; `,marginTop:"25px"}}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" style={{width:"35%",margin:"auto"}} />
@@ -68,7 +68,7 @@ const Skills = () => {
           {ToolsData.map(({ id, src, title, style }) => (
             <div
               key={id}
-              style={{textAlign:"center",boxShadow: `green 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; `}}
+              style={{textAlign:"center",boxShadow: `green 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; `,marginTop:"15px"}}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" style={{width:"35%",margin:"auto"}} />

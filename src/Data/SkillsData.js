@@ -9,6 +9,9 @@ import GitHub from "../Assets/languages/github.png";
 import Cypress from "../Assets/languages/cypress.png";
 import MongoDB from "../Assets/languages/mongodb.png";
 import Vscode from "../Assets/languages/vscode.png";
+import NPM from "../Assets/languages/npm.png";
+import Express from "../Assets/languages/express.png";
+import MongooseEx from "../Assets/languages/mongoose-icon.png";
 export const SkillsData = [
     {
       id: 1,
@@ -58,7 +61,20 @@ export const SkillsData = [
       src: MongoDB,
       title: " mongoDB",
       style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: Express,
+      title: "Express",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 9,
+      src: MongooseEx,
+      title: "Mongoose",
+      style: "shadow-sky-400",
     }
+    
    
   ];
   export const ToolsData = [
@@ -76,10 +92,17 @@ export const SkillsData = [
     },
     {
       id: 3,
+      src:NPM,
+      title: "npm",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 4,
       src:Cypress,
       title: "Cypress",
       style: "shadow-black",
     },
+
     
    
   ];
