@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0817e1b8.css",
-    "main.js": "/static/js/main.3feb3d10.js",
+    "main.css": "/static/css/main.24329891.css",
+    "main.js": "/static/js/main.522e55ec.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Clotheyard.png": "/static/media/Clotheyard.e305992c6ffb84632af4.png",
-    "static/media/KindMeal.png": "/static/media/KindMeal.09056393b328469ee285.png",
+    "static/media/KindMeal.png": "/static/media/KindMeal.3e264894ce38b08fefd3.png",
     "static/media/Wrike.png": "/static/media/Wrike.ee673b50385b02244328.png",
     "static/media/ZoomCar.png": "/static/media/ZoomCar.fab6aaae8cbda51a3f3a.png",
     "static/media/CampaignMonitor.png": "/static/media/CampaignMonitor.11c59168ff290d2cf5e0.png",
@@ -19,12 +19,12 @@
     "static/media/mongodb.png": "/static/media/mongodb.7233e939bf00e9a1fde4.png",
     "static/media/react.png": "/static/media/react.fbf4a0d447ec75d4500b.png",
     "index.html": "/index.html",
-    "main.0817e1b8.css.map": "/static/css/main.0817e1b8.css.map",
-    "main.3feb3d10.js.map": "/static/js/main.3feb3d10.js.map",
+    "main.24329891.css.map": "/static/css/main.24329891.css.map",
+    "main.522e55ec.js.map": "/static/js/main.522e55ec.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0817e1b8.css",
-    "static/js/main.3feb3d10.js"
+    "static/css/main.24329891.css",
+    "static/js/main.522e55ec.js"
   ]
 }
