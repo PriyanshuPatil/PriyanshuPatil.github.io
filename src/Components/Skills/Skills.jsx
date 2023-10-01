@@ -2,19 +2,16 @@ import { Flex, Grid } from '@chakra-ui/react';
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { SkillsData, ToolsData } from '../../Data/SkillsData';
+import style from "./Skills.module.css";
 const Skills = () => {
     const themeColor = useSelector((store) => store.Theme.theme);
   return (
     <div name="Skills" style={{paddingTop:"100px"}}>
   
 <div
-    style={{
-      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-      margin: "auto",
-      width: "80%",
-      borderRadius: "20px",
+      className={style.SkillsParent}
       
-    }}
+
   >
     <div
       style={{

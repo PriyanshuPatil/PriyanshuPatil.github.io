@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { SkillsData } from '../../Data/SkillsData';
 import GitHubCalendar from 'react-github-calendar'
+import style from "./GitHub.module.css";
 import { Heading } from '@chakra-ui/react';
 import { BsGithub } from 'react-icons/bs';
 const Projects = () => {
@@ -11,13 +12,7 @@ const Projects = () => {
   
      <div 
   
-    style={{
-      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-      margin: "auto",
-      width: "80%",
-      borderRadius: "20px",
-      
-    }}
+  className={style.GitHubParent}
   >
     <div
       style={{

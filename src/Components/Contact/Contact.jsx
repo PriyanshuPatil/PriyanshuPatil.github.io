@@ -7,6 +7,7 @@ import { Button } from '@chakra-ui/react';
 import { FiGithub } from "react-icons/fi";
 import { ImLink} from "react-icons/im";
 import emailjs from '@emailjs/browser';
+import style from "./Contact.module.css";
 const Contact = () => {
     const themeColor = useSelector((store) => store.Theme.theme);
     const [email,setemail]=useState("")
@@ -30,15 +31,7 @@ return (
   <div name="Contact" style={{paddingTop:"100px"}}>
   
      <div 
-  
-    style={{
-      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-      margin: "auto",
-      width: "80%",
-      borderRadius: "20px",
-      
-    }}
-  >
+    className={style.ContactParent} >
     <div
       style={{
         backgroundColor: themeColor,

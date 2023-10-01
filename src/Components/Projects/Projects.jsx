@@ -6,7 +6,7 @@ import { ProjectData } from '../../Data/ProjectData';
 import { Box, Button, Grid, GridItem, Heading } from '@chakra-ui/react';
 import { FiGithub } from "react-icons/fi";
 import { ImLink } from "react-icons/im";
-
+import style from "./Projects.module.css";
 const Projects = () => {
   const themeColor = useSelector((store) => store.Theme.theme);
   return (
@@ -14,13 +14,7 @@ const Projects = () => {
 
       <div
 
-        style={{
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          margin: "auto",
-          width: "80%",
-          borderRadius: "20px",
-
-        }}
+className={style.ProjectParent}
       >
         <div
           style={{

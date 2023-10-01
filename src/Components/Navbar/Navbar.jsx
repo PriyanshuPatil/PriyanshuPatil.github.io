@@ -1,10 +1,10 @@
 import style from "./Navbar.module.css";
 import React, { useState } from "react";
-import { FaBars, FaTimes,FaPaintBrush } from "react-icons/fa";
+import { FaBars, FaTimes, FaPaintBrush } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 import Modalis from "./Modal";
-import Resume from "../../Assets/fw20_1043-Priyanshu-Patil-Resume.pdf"
+import Resume from "../../Assets/pdf/fw20_1043-Priyanshu-Patil-Resume.pdf";
 import { Box, Button } from "@chakra-ui/react";
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -13,10 +13,17 @@ const Navbar = () => {
   //   setSidebar(!sidebar);
   // }
 
+  const openLink = (link) => {
+    window.open(
+      "https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
-    <div >
-      <div className={style.NavParentD}  style={{position: "fixed", top: "0", left: "10%", zIndex: "9999",backgroundColor:"white"}}>
-        <div className={style.NavHeadingD} >
+    <div>
+      <div className={style.NavParentD}>
+        <div className={style.NavHeadingD}>
           Pri<span style={{ color: themeColor }}>yanshu</span>
         </div>
         <div className={style.NavMenuD}>
@@ -29,26 +36,30 @@ const Navbar = () => {
             </div>
           ))}
           <div className={style.NavMenuD}>
-          <Button
-            style={{
-              backgroundColor: themeColor,
-              color:"white",
-              boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-              display: "block",
-              margin: "0px 0px",
-              width: "100px",
-              fontWeight: "300",
-            }}   
-            
-          >
-            <a download  target={"_blank"} href={Resume} >
-          <Box pt="-30px"  download  onClick={()=>{window.open('https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing','_blank' 
-);}} >Resume</Box>  </a>
-          </Button>
-        
+            <div
+              onclick={() => {
+                openLink(
+                  "https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing"
+                );
+              }}
+            >
+              <a download target={"_blank"} href={Resume}>
+                <Button
+                  className={style.NavResumeButton}
+                  style={{ backgroundColor: themeColor }}
+                  onClick={() => {
+                    openLink(
+                      "https://drive.google.com/file/d/1BJEbGf9EUvbjV5OwCTlqJqKcSgVc_MlD/view?usp=sharing"
+                    );
+                  }}
+                >
+                  <Box pt="-30px" download>
+                    Resume
+                  </Box>
+                </Button>
+              </a>
+            </div>
           </div>
-
-       
         </div>
         <div className={style.NavMenuM}>
           <div
@@ -81,7 +92,6 @@ const Navbar = () => {
               </Link>
             </div>
           ))}
-          
         </div>
       )}
     </div>
@@ -89,7 +99,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 const NavLinks = [
   {

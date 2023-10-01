@@ -1,0 +1,55 @@
+.AboutParent{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    width: 80%;
+    border-radius: 20px;
+  }
+  .AboutChild {
+    color: white;
+    padding: 40px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 20px 20px 0px 0px;
+  }
+  .AboutHeading {
+    font-size: 45px;
+    font-weight: 700;
+    margin: auto; 
+    text-align: center
+  }
+  .AboutInfoParent {
+    margin-left: 0px;
+     display: grid ;
+      grid-template-columns: repeat(2,1fr);
+       gap: 20px;
+  }
+  .AboutInfoImage{
+    width: 80%;
+    height: 100%;
+    border: 5px solid white;
+    display: box;
+    margin-left: 10%;
+  }
+  .AboutInfoChild{
+    margin: auto;
+    display: grid;
+    gap: 13px;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 30px;
+
+  }
+  .AboutSocialIconParent{
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    margin: auto
+  }
+  .AboutSocialIconChild{
+    color: gray ;
+    background-color: white ;
+    border-radius: 20px ;
+    padding: 10px
+  }
