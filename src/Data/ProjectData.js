@@ -27,7 +27,7 @@ tech:["React","Chakra","Redux","Mongoose","Express","MongoDB"]
     src: ZoomCar,
     title: "Zoom Car",
     des:"This project is a complete clone UI of the Zoomcar website. Zoomcar, is an Indian self-drive car rental company. which offers the services of booking a car in a city of your choice.",
-   netlify:"https://incomparable-marzipan-d38d20.netlify.app/home.html",
+   netlify:"https://zoomcar2327.netlify.app/",
     github:"https://github.com/PriyanshuPatil/erect-measure-8906",
     tech:["Html","Css","JavaScript","Dom"]
   }, {
